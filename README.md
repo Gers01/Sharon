@@ -1,2 +1,2 @@
-# Sharon♥
-este es un codigo dedicado para ti
+# frases
+pagina de frases
