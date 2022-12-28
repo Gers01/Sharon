@@ -1,0 +1,314 @@
+body {
+	display: inline-block;
+    margin: 0px 7% 0px 80px;
+    align-content: center;
+    text-align: center;
+	box-sizing: border-box;
+	background: linear-gradient(-45deg, #8099F9, #E99DCB, #67B3E4, #FFFFFF);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+/*animacion de color de fondo*/
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+  }
+
+  h2{
+  	color: black;
+  }
+
+  .title {
+  	margin-top: 40px;
+  	color: white;
+  }
+
+	.container {
+	float: left;
+	padding: 8px;
+	text-align: center;
+    margin: 20px;
+    width: 22rem;
+    height: 21rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  margin: -20px;
+}
+
+	.container2 {
+	float: left;
+	padding: 8px;
+	text-align: center;
+    margin: 20px;
+    width: 22rem;
+    /*height: 21rem;*/
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.container2:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  margin: -20px;
+}
+
+#spacercont{
+  width: 352px;
+  height: 472px;
+}
+
+.image{
+	border-radius: 50%;
+
+}
+.image2{
+	text-align: center;
+}
+
+/*.container3 {
+	float: left;
+	padding: 15px;
+	text-align: center;
+    margin: 20px;
+    width: 22rem;
+    /*height: 21rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}*/
+
+.spo{
+margin-top: -50px;
+}
+	
+	.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+
+  .button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.player {
+  width: 270px;
+  padding: 10px 40px;
+  margin-top: 10px;
+  border-radius: 36px;
+  background: #eaeaea;
+  box-shadow: 41px 41px 82px #bebebe, -41px -41px 82px #ffffff;
+}
+
+.song-image{
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.song-name {
+  margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.song-author {
+  margin: 0;
+  color: #a5aaaf;
+  text-align: center;
+}
+.player-progress {
+  margin-top: 36px;
+}
+.player-progress .progress-values {
+  display: flex;
+  justify-content: space-between;
+  color: #a5aaaf;
+  font-size: 14px;
+}
+/* .player-progress progress {
+  width: 100%;
+  height: 5px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.player-progress progress::-webkit-progress-bar {
+  background-color: #c3c7cc;
+  border-radius: 3px;
+}
+.player-progress progress::-webkit-progress-value {
+  background: linear-gradient(to right, #5232c1, #12ccd0);
+  border-radius: 3px;
+} */
+.player-progress input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: #cdd2d7;
+  outline: none;
+  overflow: hidden;
+}
+.player-progress input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  box-shadow: -303px 0 0 300px #9ea1a5;
+  cursor: pointer;
+}
+.player-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  gap: 24px;
+}
+.player-buttons .btn {
+  font-size: 16px;
+  width: 48px;
+  height: 48px;
+  color: #6f7275;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px #aaaaaa, -5px -5px 10px #ffffff;
+  cursor: pointer;
+}
+.player-buttons .btn-activated {
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+}
+.player-buttons .btn-activated i {
+  background: linear-gradient(to right, #5232c1, #15f1f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.player-buttons .btn.btn-prev i {
+  display: inline-block;
+  margin-top: 2px;
+  margin-right: 2px;
+}
+.player-buttons .btn.btn-play {
+  font-size: 36px;
+  width: 76px;
+  height: 76px;
+  box-shadow: 6px 6px 13px #aaaaaa, -6px -6px 13px #ffffff;
+}
+.player-buttons .btn.btn-play i {
+  display: inline-block;
+  margin-top: 4px;
+  margin-left: 2px;
+  background: linear-gradient(to right, #5232c1, #15f1f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.player-buttons .btn.btn-next i {
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+.player-buttons .dropdown {
+  position: relative;
+}
+.player-buttons .dropdown-content {
+  display: none;
+  /* background-color: red; */
+  position: absolute;
+  left: 16px;
+  bottom: 5px;
+  padding: 16px;
+  width: 104px;
+  z-index: 1;
+  transform: rotate(270deg);
+}
+.player-buttons .dropdown-content input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: #cdd2d7;
+  outline: none;
+  overflow: hidden;
+}
+.player-buttons .dropdown-content input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  box-shadow: -303px 0 0 300px #9ea1a5;
+  cursor: pointer;
+}
+.player-buttons .dropdown:hover .dropdown-content {
+  display: block;
+}
+@media (max-width: 768px) {
+  .player {
+    width: 85%;
+    box-shadow: none;
+    padding: 24px;
+  }
+  .player-buttons .btn {
+    width: 42px;
+    height: 42px;
+  }
+  .player-buttons .btn.btn-play {
+    width: 56px;
+    height: 56px;
+  }
+  .player-buttons .dropdown-content {
+    left: 4px;
+  }
+}
