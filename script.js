@@ -25,6 +25,12 @@ const songs = [
     path: "./music/Bruno Mars - Just the way you are.mp3",
   },
   {
+    image: "https://i.ytimg.com/vi/8HnxjPmZlSw/maxresdefault.jpg",
+    name: "Te Doy Mi Vida",
+    author: "Lucas Arnau",
+    path: "./music/TE DOY MI VIDA - Lucas Arnau.mp3",
+  },
+  {
     image: "https://i.scdn.co/image/ab67616d0000b27374d08c131ee8f1633f7807d9",
     name: "Único",
     author: "Joey Montana",

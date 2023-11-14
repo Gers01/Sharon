@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+
 body {
-	display: inline-block;
-    margin: 0px 7% 0px 80px;
-    align-content: center;
-    text-align: center;
+	/* display: inline-block; */
+    /* margin: 0px 7% 0px 80px; */
+    /* align-content: center; */
+  text-align: center;
 	box-sizing: border-box;
 	background: linear-gradient(-45deg, #8099F9, #E99DCB, #67B3E4, #FFFFFF);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 /*animacion de color de fondo*/
@@ -22,9 +25,40 @@ body {
 		background-position: 0% 50%;
 	}
   }
+/* fin animacion fondo */
+
+.fondo_header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./fondo-amor.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  margin: 0;
+  padding-top: 50px;
+  color:white;
+}
+
+.fondo_header::before{
+  background-color: rgba(253, 253, 253, 0.703);
+  background-size: cover;
+  background-position: center;
+}
+
+.fondo{
+  width: 400px;
+}
 
   h2{
-  	color: black;
+  	color: rgb(255, 255, 255);
+    font-family: 'Kalam';
+  }
+
+  p{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Kalam';
   }
 
   .title {
@@ -32,13 +66,28 @@ body {
   	color: white;
   }
 
+  .cont_center{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .cont_center{
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
+
 	.container {
-	float: left;
 	padding: 8px;
 	text-align: center;
     margin: 20px;
     width: 22rem;
-    height: 21rem;
+    height: 400px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 5px;
     position: relative;
@@ -62,12 +111,12 @@ body {
 }
 
 	.container2 {
-	float: left;
+	/* float: left; */
 	padding: 8px;
 	text-align: center;
     margin: 20px;
     width: 22rem;
-    /*height: 21rem;*/
+    height: 500px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 5px;
     position: relative;
@@ -93,6 +142,13 @@ body {
 #spacercont{
   width: 352px;
   height: 472px;
+}
+
+.imgback{
+  background-image: url('https://img.freepik.com/foto-gratis/ramo-tulipanes-bastante-rosados-blancos-sobre-fondo-madera_24972-314.jpg?w=740&t=st=1699943566~exp=1699944166~hmac=c435973d916fd6602759337e40695a6f582bd1bb6b712349d01ec6b8621748ea');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .image{
@@ -265,9 +321,9 @@ margin-top: -50px;
   display: none;
   /* background-color: red; */
   position: absolute;
-  left: 16px;
-  bottom: 5px;
-  padding: 16px;
+  left: 0px;
+  bottom: 45px;
+  padding: 10px;
   width: 104px;
   z-index: 1;
   transform: rotate(270deg);
